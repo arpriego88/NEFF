@@ -1,0 +1,5 @@
+<%= form_for @vendor do |f| %>
+  <%= f.label :name, "Translate To Robot Speak Here!" %>
+  <%= f.text_field :name %>
+  <span><%= f.submit "Let's Hear It!", class: "button small round" %></span>
+<% end %>
