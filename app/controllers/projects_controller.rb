@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :vendor_variable
+  before_action :vendor_variable, except: [:project_params]
 
 
   def show
