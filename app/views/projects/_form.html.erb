@@ -1,0 +1,10 @@
+<%= form_for [@vendor, @project] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: 'small-12 medium-8 large-4 columns' %>
+  <%= f.label :description %>
+  <%= f.text_field :description, class: 'small-12 medium-8 large-4 columns' %>
+  <%= f.label :due_date %>
+  <%= f.date_field :due_date, class: 'small-12 medium-8 large-4 columns' %>
+  <span><%= f.submit "New Project", class: "button" %></span>
+<% end %>
+
