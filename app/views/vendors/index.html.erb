@@ -1,5 +1,16 @@
-<div class="form"
-<% @vendors.each do |vendor| %>
-  <%= vendor.name %>
-<% end %>
-
+<div class="row">
+<table class='small-12 medium-12 large-12 columns'>
+  <thead>
+      <tr>
+  <% @vendors.each do |vendor| %>
+        <th><%= vendor.name %></th>
+  <% end %>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+</table>
+</div>
